@@ -1,0 +1,169 @@
+/*This img tag is for most of the styling of the images on the Homepage, mainly the logo & the about me image, as i didn't want them to be too big as the ballet image underneath the
+logo was teh biggest image. i decided to use the width property on most of the images as i wanted to have full control over the size of the image, and the reason i changed it to
+200px is because i through it was a nice size as i wanted it big eneough to see the images but small eneough that they weren't taking up the whole page, as both images at their
+original size where very big and would have took one page up on their own. The float property is to specify how an element should float, it can float in different directions.
+(Reference - W3Schools). I used this property to specify that i didn't want the images to move so i put (none) so that the images wouldn't move. The Margin property is used to
+create space around elements, outside any defined borders. (Reference - W3Schools). The reason i used margin is because i wanted to create some space between pictures as i think
+it looks nicer having a space between pictures than have everything touching, i didn't want too much space in between elements so i only did it at 5px as i think it looked nice.*/
+img {
+    width: 200px;       
+    float: none;
+    margin: 5px ;
+}
+/*This is the header for the Homepage, i used the background-color property which is used for setting background color to an element, this background color will cover the total size
+of an element including the padding & border, but this won't include margin. (Reference - W3Schools). The reason i used this property is because i wanted to add a background color
+to the header as i already had my logo in the header but i wanted to add some color as it looked boring just being white and i wanted to stand out from other websites where they
+just use white, so i decided to go with a light pink colour so that you can see all the design in the logo clearly but has a nice background at the same time.*/
+header {
+    background-color: rgb(255, 223, 245);
+}
+/*This is a styling link, this can be used for many different things such as color, font-family, background, etc. (Reference - W3Schools). In this case i used this for font-family
+as i wanted to add my own font called Rough Anthem, the reason i used (a) property is so that i could link the font location to the font-family name.*/
+a {
+    margin: 20px;
+    font-size:large;
+    font-family: Rough Anthem;
+}
+/*The @font-face property is used to link the font of your choice to the font-family that you have created, this property needs to know the name of your font in this case (Rough
+Anthem) and where the file is, in this case it is in my text folder. (Reference - W3Schools). i used this property to link my font to the font-family i created so that when i apply
+the font-family to certain text, it will do it automatically.*/
+@font-face {
+    font-family: Rough Anthem;
+    src: url('text/Rough\ Anthem.ttf');
+}
+div{
+  
+  background-image:url("Images/Ballet\ Dance.jpg");
+  size: 500px;
+  width: 100%;
+}
+/*This is the (h2) element that i used for the about me heading on the home page, i used the h2 element as i wanted it to be a heading that wouldn't be too big but i still wanted it to
+be an important heading as i know that as you go down the numbers the headings are less important. For the styling i did a font-family attribute and i used one of my own fonts which
+was called charming childish as i wanted a nice looking font but one that was easy to read i found this one on (DaFont) as well as all the other fonts used in the website, as i 
+wanted the fonts all be my own design rather than the general ones. For the font-size i wanted the font to be quite big to show that it was a heading as i didn't want it to so small
+that you can't read it so i decided to put it on x-large as i throught that was a nice size. I didn't want any margin so i put that on zero.*/
+h2 {
+    font-family: Charming Childish;
+    font-size: x-large;
+    margin: 0;
+}
+/*This is the (h4) element and i did this so that i could create a signature on the about me section and i wanted this to have a different font ot the rest of text in that section.
+So decided to go with this font called Anabeila as i wanted the font to be quite swirly but still able to be read so this why i went for this one i found this on (DaFont) as well.
+I wanted the font to be quite big so you could read it as well as so that people know that it is a signature, and for the colour i wanted it to go along with the colour theme of the
+website so i wnet with the darker pink so that you could still see it againest the light pink of the background.*/
+h4 {
+    font-size: x-large;
+    Font-family: Anabeila;
+    color: rgb(255, 105, 180);
+}
+/*This is the About Me section on the homepage, i used this to make this section seperate from the header, as the image that is just below the header was added in later so i made the
+section so that i could see how the layout of the page would look, For the section i wanted the background of this section to be the same as the header so i went with exact same
+light pink colour so that it would match perfectly, for the font i made it the charming childish font as most of the website has this font so that it is stylish but easy to read, and
+the font size i wanted it to be quite big , but not too big so i put in larger so that it was bigger than the original size.*/
+section {
+    background-color: rgb(255, 223, 245);
+    font-family: Charming Childish;
+    font-size: larger;
+}
+/*This is the footer on the homepage, i used this so i could add my contact details in on the homepage, i wanted to make the background colour darker than the header & about me
+section, so i went with the darker pink colour that i used on the signature, and then i went with the same font that i have used throughout most of the website charming chilidish,
+and then i decided to make the font quite big for the footer to take up some space at the buttom so i made the font x-large.*/
+footer {
+    background-color:rgb(255, 105, 180);
+    font-family: Charming Childish;
+    font-size: x-large;
+}
+/*The @font-face property is used to link the font of your choice to the font-family that you have created, this property needs to know the name of your font in this case (Anabeila) 
+and where the file is, in this case it is in my text folder. (Reference - W3Schools). i used this property to link my font to the font-family i created so that when i apply
+the font-family to certain text, it will do it automatically.*/
+@font-face {
+    font-family: Anabeila;
+    src: url('text/Anabeilla_DEMO.ttf');
+}
+/*The @font-face property is used to link the font of your choice to the font-family that you have created, this property needs to know the name of your font in this case (Charming 
+Childish) and where the file is, in this case it is in my text folder. (Reference - W3Schools). i used this property to link my font to the font-family i created so that when i apply
+the font-family to certain text, it will do it automatically.*/
+@font-face {
+    font-family: Charming Childish;
+    src: url('text/Charming\ Childish.ttf');
+}
+
+
+/*This is for the video on the Portfolio Page, the only styling i did for this was to make the width 100% as i wanted to make sure the video could be as big as possible so that 
+everyone can see it even if the have trouble with there sight etc.*/
+video {
+    max-width: 100%;
+}
+/*This img tag is for most of the styling of the images on the Portfoliio, mainly the logo & the about me image, as i didn't want them to be too big as the ballet image underneath the
+logo was teh biggest image. i decided to use the width property on most of the images as i wanted to have full control over the size of the image, and the reason i changed it to
+200px is because i through it was a nice size as i wanted it big eneough to see the images but small eneough that they weren't taking up the whole page, as both images at their
+original size where very big and would have took one page up on their own. The float property is to specify how an element should float, it can float in different directions.
+(Reference - W3Schools). I used this property to specify that i didn't want the images to move so i put (none) so that the images wouldn't move. The Margin property is used to
+create space around elements, outside any defined borders. (Reference - W3Schools). The reason i used margin is because i wanted to create some space between pictures as i think
+it looks nicer having a space between pictures than have everything touching, i didn't want too much space in between elements so i only did it at 10px as i think it looked nice.*/
+img {
+    width: 200px;
+    float: none;
+    margin: 10px; 
+}
+/*This is the header for the Homepage, i used the background-color property which is used for setting background color to an element, this background color will cover the total size
+of an element including the padding & border, but this won't include margin. (Reference - W3Schools). The reason i used this property is because i wanted to add a background color
+to the header as i already had my logo in the header but i wanted to add some color as it looked boring just being white and i wanted to stand out from other websites where they
+just use white, so i decided to go with a light pink colour so that you can see all the design in the logo clearly but has a nice background at the same time.*/
+header {
+    background-color: rgb(255, 223, 245);
+}
+/*The @font-face property is used to link the font of your choice to the font-family that you have created, this property needs to know the name of your font in this case (Rough
+Anthem) and where the file is, in this case it is in my text folder. (Reference - W3Schools). i used this property to link my font to the font-family i created so that when i apply
+the font-family to certain text, it will do it automatically.*/
+@font-face {
+    font-family: Rough Anthem;
+    src: url('text/Rough\ Anthem.ttf');
+}
+/*This is a styling link, this can be used for many different things such as color, font-family, background, etc. (Reference - W3Schools). In this case i used this for font-family
+as i wanted to add my own font called Rough Anthem, the reason i used (a) property is so that i could link the font location to the font-family name.*/
+a {
+    margin: 20px;
+    font-size: larger;
+    font-family: Rough Anthem;
+}
+/*The @font-face property is used to link the font of your choice to the font-family that you have created, this property needs to know the name of your font in this case (Charming 
+Childish) and where the file is, in this case it is in my text folder. (Reference - W3Schools). i used this property to link my font to the font-family i created so that when i apply
+the font-family to certain text, it will do it automatically.*/
+@font-face {
+    font-family: Charming Childish;
+    src: url('text/Charming\ Childish.ttf');
+}
+/*This is the footer on the Portfolio page, i used this so i could put all the sources of the images in so that i cover myself, i wanted to make the background colour darker than 
+the header & about me section, so i went with the darker pink colour that i used on the signature, and then i went with the same font that i have used throughout most of the website 
+charming chilidish, and then i decided to make the font quite big for the footer to take up some space at the buttom so i made the font x-large.*/
+footer {
+    background-color: rgb(255, 105, 180);
+    font-family: Charming Childish;
+    font-size: x-large;
+}
+/*This class is for the buttons on both the homepage & Portfolio page, these buttons are to go between the homepage and portfolio depending which button you click on, When the buttoms 
+aren't being clicked i wanted them to stay on colour so i decided to keep them white when not being clicked, for display i choose incline-block as i wanted to be able to set the
+height & width of the element and incline block allows you to do that and also with incline block the margins & padding or respected. (Reference - W3Schools). The main purpose of
+padding is to generate space around an element's content inside any defined borders. (Reference - W3Schools). For the padding i didn't want it to be too big so i went with 
+10px 20px as i think looked really good for the buttons and didn't make them too big or too small. For the font size i went with 20px so that the font inside the buttons could be
+read easily and also so it filled some of the space inside the buttons. The font-family i choose was rough anthem as that was what i wanted the font inside the buttons to be during 
+planning. For the font colour i choose black as it would be able to be seen when the button is white and when it chnages to the darker pink. The purpose of the (cursor) element is to
+specify the mouse cursor to be displayed when pointing at an element. (Reference - W3Schools). For this reason i put pointer on the cursor so that when you point at the buttons the
+cursor will show. The purpose of the transition timing function is to specify the spped curve of the transition effect, this property allows a transition effect to change speed over
+it's duration. (Reference - W3Schools). So for transition i wanted the whole button to transition so i put all and then for the speed i went with 0.4 so that it's not too fast or
+too slow and i wanted it ease as that way it would have a nice transition.*/
+.btn {
+    background-color: white;
+    display:inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+    transition: all 0.4 ease;
+}
+/*This class is for when you hover over the buttons on both the homepage & portfolio page, the only thing i wanted to style on this was the background colour so that you can tell 
+when the buttons have been pressed so i decided to go with the same darker pink colour that i used on the footer as this will keep the buttons within the theme of the website.*/
+.btn:hover {
+    background-color: rgb(255, 105, 180);
+}

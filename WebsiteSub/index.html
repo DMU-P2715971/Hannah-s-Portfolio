@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hannah Howkins Portfolio Website</title>
+    <link rel="stylesheet" href="style.css"> <!--This is the link for CSS file so all of my style elements can be connected to each page, the link element is so that the browser 
+    can start the process of going to find the document, then when you put rel and put in stylesheet then the browser knows what type of file it is, then when you add href this
+    is to let the browser know then name of file as well as completing the link element. (Reference - W3Schools).
+    The reason used this element is so that i could like style CSS to both my Homepage and Portfolio page so that all of the styling do will be applied.-->
+</head>
+<body>
+    <header> <!--This is the header element on my Homepage, this element is used for introductory purposes. (Reference - W3Schools). i used this to put my logo inside.-->
+        <center><img src="Images/Website Logo 3.jpeg" alt="My website Logo"/></center> <!--This is my Website Logo that is in the centre at the top of both the Homepage and Portfolio page. 
+            The element i used to do this is the <img> element, which is used to embed the image on the html page,and then src attribute is to tell the browser where to fdind the image,
+            and then the alt attribute is to display an alternative text just incase the image can't be displayed. (Reference - W3Schools).
+            The reason i did this is so i could have my logo in the header.-->
+        <center>
+            <button class="btn" onclick="document.location='index.html'">Home</button>
+            <button class="btn" onclick="document.location='PortfolioPage.html'">Portfolio</button>
+    </center>
+    </header>
+    <!--This is the button section for the navigation of the website between the homepage and the Portfolio page. the <button> tag is used to define a clickable button if you add the 
+        <br> tag then it will add a space in between you content and the buttons, if you add a class attribute on to it then it makes it easier when you want to style it in CSS as you
+        can style that button specifically in the CSS file. (Reference - W3Schools). The reason i did this is because i wanted to have the buttons to be able to be clicked and then
+        change the page, but i added the class btn so that in CSS i could have the buttons change colour when clicked as well as it makes it easier for any other buttons i do as they
+        can be styled the exact same way as all the other ones.-->
+    <img src="Images/Ballet Dance.jpg" alt="University Ballet" class="BalletDance"/> <!--This is the ballet image that is just after the header on the Homepage. The element i used to
+        do this is the <img> element, which is used to embed the image on the html page,and then src attribute is to tell the browser where to find the image, and then the alt 
+        attribute is to display an alternative text just incase the image can't be displayed. (Reference - W3Schools). The reason i did this is so i could have this image below the
+        header and this way i could fill up some room on the page as i didn't want to much whitespace in my homepage.-->
+<section>
+    <h2>About Me</h2>
+    <img src="Images/TV Studio.jpg" alt="Me in the TV Studio"/> <!--This is the image of me that is just under the about me title on the Homepage. The element i used to
+        do this is the <img> element, which is used to embed the image on the html page,and then src attribute is to tell the browser where to find the image, and then the alt 
+        attribute is to display an alternative text just incase the image can't be displayed. (Reference - W3Schools). The reason i did this is so that there is a picture of me on
+        the website as this section is about me it makes more sense for me to be on that section of the homepage.-->
+    <p>Hi I'm Hannah, the face behind the lens, this is my Portfolio of my work. This is to showcase all of my work for potential work employers or for anyone who wants to see what work you may have to produce during either college or University. </p>
+    <h4>Hannah Howkins</h4> <!--This is the signature in the about me section the homapage, the heading tags <h1> to <h6> are used to define the difference between important headings
+        and not so important heading, this gives your website more variety. (Reference - W3Schools). i achieved this by using the <h4> tag as i wanted the signature to be just 
+        underneath the paragraph, but i didnt't want it to be as important as the other heading tags on the website. I also used for the heading about me a <h2> tag as i wanted it to 
+        be a subheading so that i would stand out.-->
+</section> <!--This is the About me section on the hompage and to do this i used a <section> tag, which is used to define a section in html (Reference - W3Schools). The reason i did 
+           this in a <section> tag is because i wanted to keep all of this in one place.-->
+<footer>
+    <p>
+        <span class="label">Contact Info:</span>
+        <ul>
+            <li>Phone Number: 07592464730</li>
+            <li>Email: P2715971@dmu.ac.uk</li>
+        </ul>
+    </p>
+</footer>
+<!--This is the footer on my Hompage, and inside the <footer> element i have a <span> element which is a generic inline container that can be used in many different ways, 
+    but on it's own it dosen't seem that important, but if you add different things to it, it can make it a very useful tag, it can be easily styled by CSS or even manipulated 
+    with javascript using different attributes such as class or id. (reference - W3Schools).
+    The reason i used the <span> element with the class attribute is because i wanted to put my contact details inside the footer and, i wanted the info to be kept in one place 
+    hence the use of <span> as it is a container which is what i needed. Inside the <p> element there's <span> and then underneath that there is a <ul> element allows the list to 
+    be shown as bullet points, the <ul> element also stands for unordered list as it's just bullet points there is no specific order. Underneath the <ul> element, i have an <li> 
+    element which is used to define the list item, in this case i used it show the phone Number and email. (Reference - W3Schools).-->
+</body>
+</html>

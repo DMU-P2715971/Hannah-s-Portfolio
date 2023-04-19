@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hannah Howkins Portfolio Website</title>
+    <link rel="stylesheet" href="style.css"> <!--This is the link for CSS file so all of my style elements can be connected to each page, the link element is so that the browser 
+        can start the process of going to find the document, then when you put rel and put in stylesheet then the browser knows what type of file it is, then when you add href this
+        is to let the browser know then name of file as well as completing the link element. (Reference - W3Schools).
+        The reason used this element is so that i could like style CSS to both my Homepage and Portfolio page so that all of the styling do will be applied.-->
+</head>
+<body>
+        <header> <!--This is the header element on my Portfolio Page, this element is used for introductory purposes. (Reference - W3Schools). i used this to put my logo inside.-->
+            <center><img src="Images/Website Logo 3.jpeg" alt="My Website Logo"/></center> <!--This is my Website Logo that is in the centre at the top of both the Homepage and Portfolio page. 
+                The element i used to do this is the <img> element, which is used to embed the image on the html page,and then src attribute is to tell the browser where to fdind the image,
+                and then the alt attribute is to display an alternative text just incase the image can't be displayed. (Reference - W3Schools).
+                The reason i did this is so i could have my logo in the header.-->
+            <center>
+                <button class="btn" onclick="document.location='index.html'">Home</button>
+                <button class="btn" onclick="document.location='PortfolioPage.html'">Portfolio</button>
+             </center>
+         <!--This is the button section for the navigation of the website between the homepage and the Portfolio page. the <button> tag is used to define a clickable button if you add the 
+        <br> tag then it will add a space in between you content and the buttons, if you add a class attribute on to it then it makes it easier when you want to style it in CSS as you
+        can style that button specifically in the CSS file. (Reference - W3Schools). The reason i did this is because i wanted to have the buttons to be able to be clicked and then
+        change the page, but i added the class btn so that in CSS i could have the buttons change colour when clicked as well as it makes it easier for any other buttons i do as they
+        can be styled the exact same way as all the other ones.-->
+        </header>
+        <img src="Images/Ballet Dance.jpeg" alt=" My Picture for Photography Assessment"/>
+        <img src="Images/Emily Moya Image 2.jpg" alt="Owned by Emily Moya"/>
+        <img src="Images/Emily Moya Image 3.jpg" alt="Owned by Emily Moya"/>
+        <img src="Images/Emily Moya Image 4.jpg" alt="Owned by Emily Moya"/>
+        <img src="Images/Dance Photography 1.jpg" alt="Dance Photography not owned by Me"/>
+        <img src="Images/Dance Photography 2.jpg" alt="Dance Photography not Owned by Me"/>
+        <img src="Images/Dance Photography 3 Copy.jpg" alt="Dance Photgraphy not Owned by Me"/>
+        <img src="Images/Dance Photography 4.jpg" alt="Dance Photography not Owned by Me"/>
+        <img src="Images/Dance Photography 5.jpg" alt="Dance Photography not Owned by Me"/>
+        <img src="Images/Dance Photography 6 Copy.jpg" alt="Dance Photography not Owned by Me"/>
+        <img src="Images/Dance Photography 7.jpg" alt="Dance Photography not Owned by Me"/>
+        <img src="Images/Dance Photography 8 Copy.jpg" alt="Dance Photography not Owned by Me"/>
+        <img src="Images/Emily Moya Image 1.jpg" alt="Owned by Emily Moya"/>
+        <img src="Images/Buster.jpeg" alt="My Dog Buster"/>
+        <img src="Images/Autumn Trees.jpeg" alt="My Picture of Autumn Trees"/>
+        <img src="Images/Buster in 2014.jpeg" alt="My Dog Buster in 2014"/>
+        <!--These are the images that are on the Portfolio Page. The element i used to do this is the <img> element, which is used to embed the image on the html page,and then src 
+        attribute is to tell the browser where to find the image, and then the alt attribute is to display an alternative text just incase the image can't be displayed. 
+        (Reference - W3Schools). The reason i did this is so that all of the images on the portfolio page can be shown in the order i want but also so that if the images don't show
+        up and there's an error then the images will be credited to the rightful people on this as well.-->
+
+        <div style="text-align:center">
+            <button class="btn" onclick="PlayPause()">Play/Pause</button>
+            
+        <video id="video1">
+        <source src="Videos/Video 1 For Website .mp4" type="video/mp4"/>
+        </video>
+        </div>
+        <!--This is another button section for the navigation of the website only on the Portfolio page. the <button> tag is used to define a clickable button if you add the 
+        <br> tag then it will add a space in between you content and the buttons, if you add a class attribute on to it then it makes it easier when you want to style it in CSS as you
+        can style that button specifically in the CSS file. (Reference - W3Schools). The reason i did this is because i wanted to have the buttons to be able to be clicked and then
+        change the page, but i added the class btn so that in CSS i could have the buttons change colour when clicked as well as it makes it easier for any other buttons i do as they
+        can be styled the exact same way as all the other ones. The reason this is slighly different to the other button is because there is also javascript involved in how these
+        buttons work as i wanted to use javascript to have the <video> element would have a play/pause button, so instead of clicking the button and changing pages it would play the
+        video.-->
+
+        <!--So as well as me having to change the way the button works i had to also source the video so that the browser that i would click the button and this would either play or 
+        pause the video.-->
+<script>
+        var myVideo = document.getElementById("video1"); 
+
+function PlayPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+}
+</script> <!--This is the <script> element and this is used to embed client-side script or (JavaScript). The main things included in this element is scripting statements, or points
+          to an external script file through the src attribute. the main uses of JavaScript are image manipulation, form validation and dynamic changes of content. 
+          (Reference - W3Schools). The reason i used JavaScript is because i wanted to be able to play my video without having the have the <controls> attribute on the video as i
+          wanted the buttons to be above the video instead of on the video itself so that more of the video is in view better.-->
+
+          <!--For the JavaScript i wanted to code the button to when clicked once it would either play or pause the video, so i had to make sure that it would link to the video so
+          within the script i had to make sure it said video1 so that it knows what video it is playing when the button is clicked, in this case it was easy as there was only one video
+          also, i had to make sure that on the video element i added a video id as video1 so that the JavaScript knew what video it needs to play. the var element of the JavaScript
+          is showing where the browser can find the video by going to the element id, in this case the video1 id. And it is then telling the buttons what to do when pressed, in this
+          case if the video is paused then it will play the video and if the video is playing it will pause the video once the button is pressed.-->
+
+
+        <footer>
+            <p>All content in this portfolio is a mixture of images & videos done by me and images done by Emily Moya & other photographers from google, I take no credit for these images other than the ones i did. </p>
+            <p>
+                <span class="label">Image & Video Credits:</span>
+                <ul>
+                    <li>The First Ballet Image was taken by Me.</li>
+                    <li>The Last 3 Images (The 2 Dog Images & The trees) where taken by Me.</li>
+                    <li>The 2 Videos where made by me.</li>
+                    <li>All of the other Images where either from Emily Moya Photgraphy or from Google.</li>
+                </ul>
+            </p>
+        </footer>
+    <!--This is the footer on my Portfolio Page, and inside the <footer> element i have a <span> element which is a generic inline container that can be used in many different ways, 
+    but on it's own it dosen't seem that important, but if you add different things to it, it can make it a very useful tag, it can be easily styled by CSS or even manipulated 
+    with javascript using different attributes such as class or id. (reference - W3Schools).
+    The reason i used the <span> element with the class attribute is because i wanted to credit the creators of the images, for me this was important to be kept in the same place
+    hence the use of <span> as it is a container which is what i needed. Inside the <p> element there's <span> and then underneath that there is a <ul> element allows the list to 
+    be shown as bullet points, the <ul> element also stands for unordered list as it's just bullet points there is no specific order. Underneath the <ul> element, i have an <li> 
+    element which is used to define the list item, for the Portfolio Page i used the list to order the creators of the content on the page, this way i have covered myself.
+    (Reference - W3Schools).-->
+</body>
+</html>
